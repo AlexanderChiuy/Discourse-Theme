@@ -1,14 +1,39 @@
-.hello-world-banner {
-  height: 300px;
+#main-outlet {
+  background-color: lightblue; 
+}
+.footer {
   width: 100%;
-  background: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1em;
+  background-color: lightgrey;
+  text-align: center;
 }
 
-.hello-world {
-  font-size: 8em;
-  color: white;
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: $font-0;
+  line-height: $line-height-medium;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  background-color: yellow;
+
+  &:active,
+  &.btn-active {
+    text-shadow: none;
+  }
+  &[disabled],
+  &.disabled {
+    cursor: default;
+    opacity: 0.4;
+  }
+  .fa {
+    margin-right: 7px;
+  }
+  &.no-text {
+    .fa {
+      margin-right: 0;
+    }
+  }
 }
